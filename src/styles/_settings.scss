@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300&family=Josefin+Sans:ital,wght@0,100;0,200;0,400;1,100;1,200&display=swap');
+
+$main-font : 'Dosis', serif;
+$title-font : 'Josefin Sans', sans-serif;
+
+$main-color : rgb(33, 33, 33);
+$background-color : rgb(225, 225, 225);
+
+$black-layer-blur : backdrop-filter blur(6px);
+
+@mixin verticalCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 1.5rem 2rem 1rem 2rem;
+    font-family: $main-font;
+    color: $main-color;
+}
+
+h1 {
+    font-family: $title-font;
+    font-weight: 200;
+    font-size: 38px;
+    width: max-content;
+}
+
+h2 {
+    font-family: $title-font;
+    font-weight: 400;
+    font-size: 32px;
+    text-align: center;
+    margin-top: 10vh;
+}
+
+h4 {
+    text-align: center;
+}
+
+a {
+    color: $main-color;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+button {
+
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 5px 25px 5px 25px;
+    background-color: transparent;
+    font-family: $main-font;
+    font-weight: 300;
+    font-size: 18px;
+    margin: auto;
+}

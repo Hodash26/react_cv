@@ -1,0 +1,158 @@
+.img-FB {
+    width: 50%;
+}
+
+.presentation {
+    display: flex;
+    margin-top: 50px;
+}
+
+.presentation-text {
+    @include verticalCenter;
+    margin: auto auto auto 0;
+    width: 40vw;
+    height: 20rem;
+    font-size: 48px;
+    border: solid black 2px;
+    border-left: 0;
+}
+
+.about {
+    @include verticalCenter;
+    margin-top: 10vh;
+    height: 50vh;
+    border: 2px solid black;
+    font-size: 32px;
+    padding: 50px;
+    text-align: center;
+}
+
+.school {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.square {
+    font-size: 24px;
+    height: 15rem;
+    width: 15rem;
+    margin-top: 4rem;
+    border: 1px solid black;
+    filter: drop-shadow(15px black);
+}
+
+.square-container-text {
+    @include verticalCenter;
+    height: 70%;
+}
+
+.square-text {
+    text-align: center;
+    padding: 0 15px 0 15px;
+}
+
+.btn-school {
+    @include verticalCenter;
+}
+
+.square:hover {
+    transform: rotate(90deg);
+    transition: ease-in-out 1s;
+}
+
+.square-text:hover {
+    transform: rotate(-90deg);
+    transition: ease-in-out 1s;
+}
+
+.text-cut {
+    padding: 15px;
+    background-color: white;
+    mix-blend-mode: screen;
+}
+
+// CARD PRO
+
+.container-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card {
+    width: 28%;
+    height: 35vh;
+    margin: 25px;
+    background: gray;
+    overflow: hidden;
+    position: relative;
+    @include verticalCenter;
+    cursor: pointer;
+    transition: all .25s ease;
+    backface-visibility: hidden;
+}
+
+.name-card {
+    margin-top: 0;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card:hover:after {
+    height: 40vh;
+}
+
+.card:hover .con-text p {
+    margin-bottom: 0;
+    opacity: 1;
+}
+
+
+.card:after {
+    width: 100%;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 150px;
+    position: absolute;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+    z-index: 20;
+    transition: all 1s ease; 
+}
+
+.card .con-text {
+    z-index: 30;
+    position: relative;
+    color: white;
+    padding: 20px;
+    padding-bottom: 30px;
+}
+
+.card .con-text p {
+    font-size: 22px;
+    opacity: 0;
+    margin-bottom: -170px;
+    transition: all .25s ease;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.date {
+    font-size: 16px !important;
+    margin-top: 5px;
+    margin-bottom: 20px !important;
+}
+
+.date-small {
+    margin-bottom: 5px !important;
+    font-size: 16px !important;
+}
+
+.text-ad3 {
+    margin-top: 20px !important;
+}
