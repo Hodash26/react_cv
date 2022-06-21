@@ -37,7 +37,6 @@
     font-size: 24px;
     height: 15rem;
     width: 15rem;
-    margin-top: 4rem;
     border: 1px solid black;
     filter: drop-shadow(15px black);
 }
@@ -70,6 +69,10 @@
     padding: 15px;
     background-color: white;
     mix-blend-mode: screen;
+}
+
+.professional {
+    margin-bottom: 1vh;
 }
 
 // CARD PRO
@@ -155,4 +158,60 @@
 
 .text-ad3 {
     margin-top: 20px !important;
+}
+
+.container-portfolio {
+    border: 2px solid black;
+    @include verticalCenter
+}
+
+.text-left {
+    width: 50%;
+    padding: 3rem 2rem;
+    font-size: 32px;
+}
+
+.card-portfolio {
+    height: 70vh;
+    border-left: 1px solid black;
+    padding: 1rem;
+    @include flexAround;
+    flex-wrap: wrap;
+}
+
+.square-portfolio {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    width: 40%;
+    height: 30vh;
+    padding: 2rem;
+    text-align: center;
+}
+
+.text-square-portfolio {
+    font-family: $title-font;
+    font-weight: 400;
+    font-size: 32px;
+    text-align: center;
+    margin: 1rem;
+}
+
+.btn-portfolio {
+    padding: 0.5rem;
+    margin-top: 5vh;
+}
+
+.btn-portfolio > button {
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    transition: 0.5s;
+}
+
+.btn-portfolio >button:hover {
+    cursor: pointer;
+    transition: 300ms ease-in-out;
+    text-decoration-color: white;
+    background-color: black;
+    color: $background-color;
 }

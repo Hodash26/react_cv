@@ -1,5 +1,7 @@
 import React from 'react';
 import Navigation from '../components/Navigation';
+import { NavLink } from 'react-router-dom';
+
 
 const Home = () => {
     return (
@@ -52,7 +54,7 @@ const Home = () => {
             </div>
         </div>
 
-        <h2>PROFESSIONNEL</h2>
+        <h2 className='professional'>PROFESSIONNEL</h2>
         <h4>(En lien avec le développement)</h4>
 
         {/* HOVER CARD */}
@@ -60,7 +62,7 @@ const Home = () => {
         <div className='container-card'>
             <div className='card'>
                 <div className='con-text'>
-                    <h2 className='name-card'>Alternance HeX</h2>
+                    <h3 className='name-card'>Alternance HeX</h3>
                     <p className='date'>janvier 2020 ~ août 2020</p>
                     <p>- Developpement Wordpress</p>
                     <p>- Construction E-mailing</p>
@@ -71,7 +73,7 @@ const Home = () => {
 
             <div className='card'>
                 <div className='con-text'>
-                    <h2 className='name-card'>Stage Atos</h2>
+                    <h3 className='name-card'>Stage Atos</h3>
                     <p className='date'>novembre 2019 ~ avril 2020</p>
                     <p>- Apprentissage d'Angular</p>
                     <p>- Travail en équipe</p>
@@ -84,7 +86,7 @@ const Home = () => {
         <div className='container-card'>
             <div className='card'>
                 <div className='con-text'>
-                    <h2 className='name-card'>Maître d'internat - AED</h2>
+                    <h3 className='name-card'>Maître d'internat - AED</h3>
                     <p className='date'>septembre 2021 ~ août 2022</p>
                     <p>- Communication formelle & informelle</p>
                     <p>- Gestion des crises & méthodologies</p>
@@ -94,7 +96,7 @@ const Home = () => {
 
             <div className='card'>
                 <div className='con-text ad3'>
-                    <h2 className='name-card'>Chauffeur - Livreur AD3 </h2>
+                    <h3 className='name-card'>Chauffeur - Livreur AD3 </h3>
                     <p className='date-small'>août 2020</p>
                     <p className='date-small'>octobre ~ novembre 2018</p>
                     <p className='date-small'>juillet ~ août 2017</p>
@@ -105,7 +107,7 @@ const Home = () => {
 
             <div className='card'>
                 <div className='con-text'>
-                    <h2 className='name-card'>Préparateur de commande H2O</h2>
+                    <h3 className='name-card'>Préparateur de commande H2O</h3>
                     <p className='date'>juillet 2020</p>
                     <p>- Méthodologies</p>
                     <p>- Travail en équipe</p>
@@ -114,7 +116,7 @@ const Home = () => {
 
             <div className='card'>
                 <div className='con-text'>
-                    <h2 className='name-card'>Préparateur/Livreur commande Auchan drive</h2>
+                    <h3 className='name-card'>Préparateur/Livreur commande Auchan drive</h3>
                     <p className='date'>decembre 2018 ~ fevrier 2019</p>
                     <p>- Méthodologies</p>
                     <p>- Travail en équipe</p>
@@ -123,7 +125,7 @@ const Home = () => {
 
             <div className='card'>
                 <div className='con-text'>
-                    <h2 className='name-card'>Stage Max-Mine</h2>
+                    <h3 className='name-card'>Stage Max-Mine</h3>
                     <p className='date'>mars ~ mai 2018</p>
                     <p>- Méthodologies</p>
                     <p>- Contact clients/fournisseurs</p>
@@ -138,6 +140,73 @@ const Home = () => {
                     <p>- Méthodologies</p>
                     <p>- Contact fournisseurs</p>
                 </div>
+            </div>
+        </div>
+
+        <h2>PORTFOLIO</h2>
+
+        <div className='container-portfolio'>
+            <div className='text-left'>
+                <p>Grâce à des projets d'écoles, des projets personnels, projets d'alternance et de stage j'ai pu
+                    mettre mes compétences aux services des autres toujours dans une dynamique d'amélioration continue des
+                    techniques et des langages de programmation que j'utilise.
+                </p>
+            </div>
+
+            <div className='card-portfolio'>
+                <div className='square-portfolio'>
+                    <p className='text-square-portfolio'>HeX GROUP</p>
+                    <NavLink className='btn-portfolio' to="/hex/details">
+                        <button>EN SAVOIR PLUS</button>
+                    </NavLink>
+                </div>
+                <div className='square-portfolio'>
+                    <p className='text-square-portfolio'>Éden Rôliste</p>
+                    <NavLink className='btn-portfolio' to="/eden-roliste/details">
+                        <button>EN SAVOIR PLUS</button>
+                    </NavLink>
+                </div>
+                <div className='square-portfolio'>
+                    <p className='text-square-portfolio'>Urwebee</p>
+                    <NavLink className='btn-portfolio' to="/urwebee/details">
+                        <button>EN SAVOIR PLUS</button>
+                    </NavLink>
+                </div>
+                <div className='square-portfolio'>
+                    <p className='text-square-portfolio'>Lyra System</p>
+                    <NavLink className='btn-portfolio' to="/lyra-system/details">
+                        <button>EN SAVOIR PLUS</button>
+                    </NavLink>
+                </div>
+            </div>
+        </div>
+
+        <h2>LOISIRS</h2>
+
+        <div className='container-hobbies'>
+            <div>
+                <img src='' alt=''></img>
+                <p>Jeu de rôle</p>
+            </div>
+            <div>
+                <img src='' alt=''></img>
+                <p>Jeux vidéos</p>
+            </div>
+            <div>
+                <img src='' alt=''></img>
+                <p>Musiques</p>
+            </div>
+            <div>
+                <img src='' alt=''></img>
+                <p>Séries</p>
+            </div>
+            <div>
+                <img src='' alt=''></img>
+                <p>Jeu de société</p>
+            </div>
+            <div>
+                <img src='' alt=''></img>
+                <p>Co-gérant de la Table des Rôlistes</p>
             </div>
         </div>
 
