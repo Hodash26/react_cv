@@ -6,7 +6,7 @@ div.header {
     display: inline-flex;
     justify-content: space-between;
     width: 100%;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid white;
 }
 
 .burger-menu {
@@ -22,5 +22,5 @@ span {
 
 span:hover {
     transition: 300ms ease-in-out;
-    text-decoration-color: black;
+    text-decoration-color: white;
 }

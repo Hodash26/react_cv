@@ -1,7 +1,13 @@
 import React from 'react';
 import Navigation from '../components/Navigation';
+import Footer from '../components/Footer';
 import { NavLink } from 'react-router-dom';
-
+import series from '../media/series.svg'
+import diced20 from '../media/dice-d20.svg'
+import diced6 from '../media/dice-d6.svg'
+import discord from '../media/discord.svg'
+import music from '../media/music.svg'
+import gamepad from '../media/gamepad.svg'
 
 const Home = () => {
     return (
@@ -9,7 +15,7 @@ const Home = () => {
             <Navigation />
 
             <div className='presentation'>
-                    <img className="img-FB" src="./media/project2.jpg" alt="Florent Bailly"/>
+                    <img className="img-FB" src="./media/project1.jpg" alt="Florent Bailly"/>
                     <p className='presentation-text'>
                         Développeur Web Junior
                     </p>
@@ -184,31 +190,33 @@ const Home = () => {
         <h2>LOISIRS</h2>
 
         <div className='container-hobbies'>
-            <div>
-                <img src='' alt=''></img>
+            <div className='container-icon-text'>
+                <img className='icons' src={diced20} alt='D20 dice icon'/>
                 <p>Jeu de rôle</p>
             </div>
-            <div>
-                <img src='' alt=''></img>
+            <div className='container-icon-text'>
+            <img className='icons' src={gamepad} alt='Controller icon'/>
                 <p>Jeux vidéos</p>
             </div>
-            <div>
-                <img src='' alt=''></img>
+            <div className='container-icon-text'>
+            <img className='icons' src={music} alt='Music icon'/>
                 <p>Musiques</p>
             </div>
-            <div>
-                <img src='' alt=''></img>
+            <div className='container-icon-text'>
+            <img className='icons' src={series} alt='series icon'/>
                 <p>Séries</p>
             </div>
-            <div>
-                <img src='' alt=''></img>
+            <div className='container-icon-text'>
+                <img className='icons' src={diced6} alt='D6 dice icon'/>
                 <p>Jeu de société</p>
             </div>
-            <div>
-                <img src='' alt=''></img>
+            <div className='container-icon-text'>
+            <img className='icons' src={discord} alt='discord icon'/>
                 <p>Co-gérant de la Table des Rôlistes</p>
             </div>
         </div>
+
+        <Footer />
 
         </div>
     );

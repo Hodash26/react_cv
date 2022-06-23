@@ -13,7 +13,7 @@
     width: 40vw;
     height: 20rem;
     font-size: 48px;
-    border: solid black 2px;
+    border: solid white 2px;
     border-left: 0;
 }
 
@@ -21,7 +21,7 @@
     @include verticalCenter;
     margin-top: 10vh;
     height: 50vh;
-    border: 2px solid black;
+    border: 2px solid white;
     font-size: 32px;
     padding: 50px;
     text-align: center;
@@ -37,8 +37,8 @@
     font-size: 24px;
     height: 15rem;
     width: 15rem;
-    border: 1px solid black;
-    filter: drop-shadow(15px black);
+    border: 1px solid white;
+    filter: drop-shadow(15px white);
 }
 
 .square-container-text {
@@ -87,7 +87,6 @@
     width: 28%;
     height: 35vh;
     margin: 25px;
-    background: gray;
     overflow: hidden;
     position: relative;
     @include verticalCenter;
@@ -161,7 +160,7 @@
 }
 
 .container-portfolio {
-    border: 2px solid black;
+    border: 2px solid white;
     @include verticalCenter
 }
 
@@ -173,7 +172,7 @@
 
 .card-portfolio {
     height: 70vh;
-    border-left: 1px solid black;
+    border-left: 1px solid white;
     padding: 1rem;
     @include flexAround;
     flex-wrap: wrap;
@@ -182,7 +181,7 @@
 .square-portfolio {
     display: flex;
     flex-direction: column;
-    border: 1px solid black;
+    border: 1px solid white;
     width: 40%;
     height: 30vh;
     padding: 2rem;
@@ -212,6 +211,30 @@
     cursor: pointer;
     transition: 300ms ease-in-out;
     text-decoration-color: white;
-    background-color: black;
-    color: $background-color;
+    background-color: white;
+    color: black;
+}
+
+.container-hobbies {
+    @include flexAround;
+    width: auto;
+    flex-wrap: wrap;
+}
+
+.container-icon-text {
+    margin: 20px 30px 20px 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.container-icon-text > p {
+    font-size: 22px;
+    margin-top: 1rem;
+}
+
+.icons {
+    height: 50px;
+    width: 50px;
+    width: auto;
 }
