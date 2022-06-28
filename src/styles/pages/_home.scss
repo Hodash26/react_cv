@@ -19,9 +19,10 @@
 
 .about {
     @include verticalCenter;
+    @include gradientBorder;
     margin-top: 10vh;
     height: 50vh;
-    border: 2px solid white;
+    // border: 2px solid white;
     font-size: 32px;
     padding: 50px;
     text-align: center;
@@ -31,19 +32,54 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    align-items: center;
+    margin: 4em;
 }
 
 .square {
     font-size: 24px;
     height: 15rem;
     width: 15rem;
-    border: 1px solid white;
-    filter: drop-shadow(15px white);
+    margin: 2rem;
+    border: 1px solid white
+}
+
+.oval {
+    @include bacBackground;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.square > .oval {
+    border-width: 0;
+    border-style: none;
+}
+
+.half {
+    @include waveBackground;
+    background-size: cover;
+}
+
+.simple {
+    @include blobBackground;
+    background-size: cover;
+}
+
+.parallelogram {
+    @include circuitBackground;
+    transform: skew(20deg);
+    width: auto;
+    padding: 1em;
+    background-size: cover;
+}
+
+.parallelogram p {
+    transform: skew(-20deg);
 }
 
 .square-container-text {
     @include verticalCenter;
-    height: 70%;
+    height: 100%;
 }
 
 .square-text {
@@ -55,20 +91,9 @@
     @include verticalCenter;
 }
 
-.square:hover {
-    transform: rotate(90deg);
-    transition: ease-in-out 1s;
-}
-
-.square-text:hover {
-    transform: rotate(-90deg);
-    transition: ease-in-out 1s;
-}
-
 .text-cut {
     padding: 15px;
     background-color: white;
-    mix-blend-mode: screen;
 }
 
 .professional {
@@ -118,9 +143,10 @@
     content: '';
     left: 0;
     bottom: 0;
-    height: 150px;
+    height: 100vh;
     position: absolute;
-    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+    @include cardBackground;
+    background-size: cover;
     z-index: 20;
     transition: all 1s ease; 
 }
@@ -160,7 +186,9 @@
 }
 
 .container-portfolio {
-    border: 2px solid white;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    // border: 2px solid white;
     @include verticalCenter
 }
 
@@ -171,8 +199,7 @@
 }
 
 .card-portfolio {
-    height: 70vh;
-    border-left: 1px solid white;
+    height: auto;
     padding: 1rem;
     @include flexAround;
     flex-wrap: wrap;
@@ -183,7 +210,8 @@
     flex-direction: column;
     border: 1px solid white;
     width: 40%;
-    height: 30vh;
+    height: auto;
+    margin: 2rem 0 2rem 0;
     padding: 2rem;
     text-align: center;
 }
@@ -210,7 +238,7 @@
 .btn-portfolio >button:hover {
     cursor: pointer;
     transition: 300ms ease-in-out;
-    text-decoration-color: white;
+    text-decoration-color: #0E2A47;
     background-color: white;
     color: black;
 }
@@ -237,4 +265,5 @@
     height: 50px;
     width: 50px;
     width: auto;
+    color: white;
 }

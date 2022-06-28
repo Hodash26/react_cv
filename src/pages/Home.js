@@ -28,35 +28,30 @@ const Home = () => {
                 </p>
             </div>
 
-        <h2>ÉTUDES</h2>
+        <h2 className='neon'>ÉTUDES</h2>
 
         <div className='school'>
-            <div className='square'>
+            <div className='square oval'>
                 <div className='square-container-text'>
                     <p className='square-text'>BAC STMG</p>
                 </div>
-                <button className='btn-school'> En savoir plus</button>
             </div>
 
-            <div className='square'>
+            <div className='square half'>
                 <div className='square-container-text'>
                     <p className='square-text'>BTS ASSISTANT DE GESTION PME-PMI</p>
                 </div>
-                <button className='btn-school'> En savoir plus</button>
             </div>
 
-            <div className='square'>
+            <div className='square simple'>
                 <div className='square-container-text'>
                     <p className='square-text'>TITRE PRO DEVELOPPEUR WEB</p>
                 </div>
-                <button className='btn-school'> En savoir plus</button>
             </div>
-
-            <div className='square'>
+            <div className='square parallelogram'>
                 <div className='square-container-text'>
                     <p className='square-text'>LICENCE PRO CRÉA WEB</p>
                 </div>
-                <button className='btn-school'> En savoir plus</button>
             </div>
         </div>
 
