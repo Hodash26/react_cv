@@ -22,9 +22,14 @@ $black-layer-blur : backdrop-filter blur(6px);
     align-items: center;
 }
 
-@mixin gradientBorder {
-    // border-image: linear-gradient(to left, rgba(0, 69, 158, 1), #3379C2) 1;
+@mixin gradientBorderRight {
     border-image: linear-gradient(to right, #3379C2, white) 1;
+    border-width: 3px;
+    border-style: solid;
+}
+
+@mixin gradientBorderLeft {
+    border-image: linear-gradient(to left, #3379C2, white) 1;
     border-width: 3px;
     border-style: solid;
 }
@@ -90,3 +95,14 @@ button {
     color: $main-color;
 }
 
+// RESPONSIVE TAB
+
+@media screen and (max-width: 960px) {
+    h1 {
+        font-size: 34px;
+    }
+
+    h2 {
+        margin: 4rem 0 1rem 0;
+    }
+}

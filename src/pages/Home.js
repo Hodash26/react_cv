@@ -28,7 +28,7 @@ const Home = () => {
                 </p>
             </div>
 
-        <h2 className='neon'>ÉTUDES</h2>
+        <h2>ÉTUDES</h2>
 
         <div className='school'>
             <div className='square oval'>
@@ -60,7 +60,7 @@ const Home = () => {
 
         {/* HOVER CARD */}
 
-        <div className='container-card'>
+        <div className='container-card develop'>
             <div className='card'>
                 <div className='con-text'>
                     <h3 className='name-card'>Alternance HeX</h3>
@@ -155,25 +155,25 @@ const Home = () => {
             </div>
 
             <div className='card-portfolio'>
-                <div className='square-portfolio'>
+                <div className='square-portfolio left'>
                     <p className='text-square-portfolio'>HeX GROUP</p>
                     <NavLink className='btn-portfolio' to="/hex/details">
                         <button>EN SAVOIR PLUS</button>
                     </NavLink>
                 </div>
-                <div className='square-portfolio'>
+                <div className='square-portfolio right'>
                     <p className='text-square-portfolio'>Éden Rôliste</p>
                     <NavLink className='btn-portfolio' to="/eden-roliste/details">
                         <button>EN SAVOIR PLUS</button>
                     </NavLink>
                 </div>
-                <div className='square-portfolio'>
-                    <p className='text-square-portfolio'>Urwebee</p>
+                <div className='square-portfolio left urwebee'>
+                    <p className='text-square-portfolio'>Projet Urwebee</p>
                     <NavLink className='btn-portfolio' to="/urwebee/details">
                         <button>EN SAVOIR PLUS</button>
                     </NavLink>
                 </div>
-                <div className='square-portfolio'>
+                <div className='square-portfolio right'>
                     <p className='text-square-portfolio'>Lyra System</p>
                     <NavLink className='btn-portfolio' to="/lyra-system/details">
                         <button>EN SAVOIR PLUS</button>
