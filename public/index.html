@@ -11,11 +11,36 @@
     <link rel="shortcut icon" href="./media/laptop.svg">
     <title>Florent Bailly - CV</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-
+    <!-- <script src="../src/scripts/script.js"></script> -->
   </head>
   <body>
     <div id="root"></div>
 
+    <!-- <script>
+      let burgerButton = document.querySelector('.burger--button');
+      let burgerLine = document.querySelectorAll('.ligne');
+      let aButton = document.querySelectorAll('.menu--off');
+      let menuContent = document.querySelector('.main-menu');
+      let html = document.querySelector('html');
+      let home_link = document.querySelectorAll('.main-menu nav a');
 
+      burgerButton.addEventListener('click', function(e) {
+          e.preventDefault();
+          burgerButton.classList.toggle('active'); // bouton burger de on à off et de off à on
+          burgerLine.forEach((line) => {
+            line.style.background ="#fff";
+          });
+          menuContent.classList.toggle('menu-active'); //ouvre la page de menu burger
+          html.classList.toggle('main-menu-open'); //empeche le scroll du menu burger
+      });
+
+      aButton.forEach(item => {
+        item.addEventListener('click',()=>{
+          burgerButton.classList.remove('active'); //remet le bouton burger en off
+          menuContent.classList.remove('menu-active'); //referme la page de menu burger
+          html.classList.remove('main-menu-open'); //autorise le scroll
+        });
+      });
+    </script> -->
   </body>
 </html>

@@ -1,15 +1,39 @@
-header {
-    width: 100%;
+// ---------------------------- NEW -----------------------------
+
+.header--container, .main-menu {
+    display: none;
 }
 
-div.header {
+header {
+    margin: auto;
+    margin-top: 0;
+    display: flex;
+    font-size: 18px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+a {
+    padding-left: 30px;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    transition: 0.5s;
+}
+
+a:hover {
+    transition: 300ms ease-in-out;
+    text-decoration-color: white;
+}
+
+header {
     display: inline-flex;
     justify-content: space-between;
     width: 100%;
     border-bottom: 1px solid white;
 }
 
-.burger-menu {
+.container-link {
+    display: flex;
     font-size: 24px;
 }
 
@@ -23,4 +47,144 @@ span {
 span:hover {
     transition: 300ms ease-in-out;
     text-decoration-color: white;
+}
+
+
+/* ------------------------------------------------------------------- */
+/* ----------------------RESPONSIVE TABLETTE-------------------------- */
+/* ------------------------------------------------------------------- */
+
+@media screen and (max-width: 960px) {
+
+    html.main-menu-open {
+        overflow: hidden;
+    }
+
+    /* ----------------------PARTIE SECTION HEADER-------------------------- */
+
+    .header--container,
+    .main-menu {
+        display: initial;
+    }
+
+    a {
+        padding: 0;
+    }
+
+    .main-menu {
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: 80;
+        transform: translateX(-100%);
+        opacity: 0;
+        transition: all 1s ease-in-out;
+    }
+
+    .menu-active {
+        transform: translateX(0%);
+        opacity: 1;
+        background-color: rgba(0, 69, 158, 1);
+    }
+
+    .burger--button {
+        width: 50px;
+        height: 50px;
+        position: relative;
+    }
+
+    .burger--button .ligne {
+        width: 20px;
+        height: 5px;
+        border-radius: 5px;
+        background: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: all 0.2s ease-in-out;
+    }
+
+    .burger--button .ligne:first-child {
+        top: 12px;
+    }
+
+    .burger--button .ligne:last-child {
+        top: 38px;
+    }
+
+    nav {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    nav>a {
+        font-size: 25px;
+        text-align: center;
+        width: 100%;
+        color: white;
+    }
+
+    header {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    header .header--container {
+        position: fixed;
+        display: flex;
+        right: 5vw;
+        top: 2vh;
+        align-items: center;
+        z-index: 101;
+        cursor: pointer;
+    }
+
+    .burger--button.active .ligne:first-child {
+        background: white;
+        left: 50%;
+        transform: translate(-50%, 14px) rotate(-45deg);
+        transition-delay: 1s;
+        transition: all 0.5 ease-in-out;
+    }
+
+    .burger--button.active .ligne:last-child {
+        background: white;
+        left: 50%;
+        transform: translate(-50%, -10px) rotate(45deg);
+        top: 37px;
+        transition-delay: 1s;
+        transition: all 0.5 ease-in-out;
+    }
+
+    .burger--button.active .ligne:nth-child(2) {
+        transition-delay: 1s;
+        background: transparent !important;
+    }
+
+    .container-link>a {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    body {
+        margin: 2rem 2rem 0 2rem;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    header {
+        margin-top: 8vh;
+        justify-content: center;
+    }
 }

@@ -40,6 +40,11 @@ $black-layer-blur : backdrop-filter blur(6px);
     padding: 0;
 }
 
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 1.5rem 2rem 0 2rem;
     font-family: $main-font;
@@ -47,6 +52,7 @@ body {
     @include mainBackground;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow-x: hidden;
 }
 
 h1 {
