@@ -46,7 +46,7 @@ html {
 }
 
 body {
-    margin: 1.5rem 2rem 0 2rem;
+    margin: 0.5rem 2rem 0 2rem;
     font-family: $main-font;
     color: white;
     @include mainBackground;
@@ -99,6 +99,12 @@ button {
     font-size: 18px;
     margin: auto;
     color: $main-color;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 // RESPONSIVE TAB

@@ -50,7 +50,7 @@ const Home = () => {
             </div>
             <div className='square parallelogram'>
                 <div className='square-container-text'>
-                    <p className='square-text'>LICENCE PRO CRÉA WEB</p>
+                    <p className='square-text'> LICENCE PRO CRÉA WEB</p>
                 </div>
             </div>
         </div>
@@ -61,7 +61,7 @@ const Home = () => {
         {/* HOVER CARD */}
 
         <div className='container-card develop'>
-            <div className='card'>
+            <div className='card pro'>
                 <div className='con-text'>
                     <h3 className='name-card'>Alternance HeX</h3>
                     <p className='date'>janvier 2020 ~ août 2020</p>
@@ -72,7 +72,7 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className='card'>
+            <div className='card pro'>
                 <div className='con-text'>
                     <h3 className='name-card'>Stage Atos</h3>
                     <p className='date'>novembre 2019 ~ avril 2020</p>
@@ -85,7 +85,7 @@ const Home = () => {
         <h4>(Sans lien avec le développement)</h4>
 
         <div className='container-card'>
-            <div className='card'>
+            <div className='card no-pro'>
                 <div className='con-text'>
                     <h3 className='name-card'>Maître d'internat - AED</h3>
                     <p className='date'>septembre 2021 ~ août 2022</p>
@@ -95,7 +95,7 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className='card'>
+            <div className='card no-pro'>
                 <div className='con-text ad3'>
                     <h3 className='name-card'>Chauffeur - Livreur AD3 </h3>
                     <p className='date-small'>août 2020</p>
@@ -106,7 +106,7 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className='card'>
+            <div className='card no-pro'>
                 <div className='con-text'>
                     <h3 className='name-card'>Préparateur de commande H2O</h3>
                     <p className='date'>juillet 2020</p>
@@ -115,7 +115,7 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className='card'>
+            <div className='card no-pro'>
                 <div className='con-text'>
                     <h3 className='name-card'>Préparateur/Livreur commande Auchan drive</h3>
                     <p className='date'>decembre 2018 ~ fevrier 2019</p>
@@ -124,7 +124,7 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className='card'>
+            <div className='card no-pro'>
                 <div className='con-text'>
                     <h3 className='name-card'>Stage Max-Mine</h3>
                     <p className='date'>mars ~ mai 2018</p>
@@ -134,7 +134,7 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className='card'>
+            <div className='card no-pro'>
                 <div className='con-text'>
                     <h2 className='name-card'>Stage Finassur</h2>
                     <p className='date'>mai ~ juin 2017</p>
@@ -187,11 +187,11 @@ const Home = () => {
         <div className='container-hobbies'>
             <div className='container-icon-text'>
                 <img className='icons' src={diced20} alt='D20 dice icon'/>
-                <p>Jeu de rôle</p>
+                <p>Jeux de rôle</p>
             </div>
             <div className='container-icon-text'>
             <img className='icons' src={gamepad} alt='Controller icon'/>
-                <p>Jeux vidéos</p>
+                <p>Jeux vidéo</p>
             </div>
             <div className='container-icon-text'>
             <img className='icons' src={music} alt='Music icon'/>
@@ -203,7 +203,7 @@ const Home = () => {
             </div>
             <div className='container-icon-text'>
                 <img className='icons' src={diced6} alt='D6 dice icon'/>
-                <p>Jeu de société</p>
+                <p>Jeux de société</p>
             </div>
             <div className='container-icon-text'>
             <img className='icons' src={discord} alt='discord icon'/>

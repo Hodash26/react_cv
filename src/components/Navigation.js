@@ -1,73 +1,49 @@
-import React from 'react';
+import React from 'react'
+import { useState } from "react"
 import { NavLink } from 'react-router-dom';
 
-const Navigation = () => {
-    return (
-        <div id='accueil' className='container-header-section'>
-            <header>
-                <h1>Florent Bailly</h1>
-                <div className='container-link'>
-                    <NavLink to="/">
-                        <p>Accueil</p>
-                    </NavLink>
+function NewNavigation() {
 
-                    <NavLink to="/a-propos">
-                        <p>À propos</p>
-                    </NavLink>
+    const [showLinks, setShowLinks] = useState(false)
 
-                    <NavLink to="/portfolio">
-                        <p>Portfolio</p>
-                    </NavLink>
-                    
-                    <NavLink to="/contact">
-                        <p>Contact</p>
-                    </NavLink>
-                </div>
+    const handleShowLinks = () => {
+        setShowLinks(!showLinks)
+    }
 
-{/* --------------------MENU-BURGER TAB & MOBILE-------------------- */}
+    console.log(showLinks)
 
-            <div className='header--container'>
-                <div className='burger--button'>
-                    <span className='ligne'></span>
-                    <span className='ligne'></span>
-                    <span className='ligne'></span>
-                </div>
-            </div>
-            <div className='main-menu'>
-                <nav>
-                    {/* <a className='menu--off' href="#">
-                        <p>Accueil</p>
-                    </a>
-                    <a className='menu--off' href="#">
-                        <p>A propos</p>
-                    </a>
-                    <a className='menu--off' href="#">
-                        <p>Portfolio</p>
-                    </a>
-                    <a className='menu--off' href="#">
-                        <p>Contact</p>
-                    </a> */}
+  return (
+    <nav className={`navbar ${showLinks ? "show-nav" : "hide-nav"} `}>
+        <div className='navbar-title'>
+            <h1>Florent Bailly</h1>
+        </div>
+        <ul className='navbar-links'>
+            <li className='navbar-item slideInDown-1'>
+                <NavLink to="/" className='navbar-link'>
+                    Accueil
+                </NavLink>
+            </li>
+            <li className='navbar-item slideInDown-2'>
+                <NavLink to="/a-propos" className='navbar-link'>
+                    A propos
+                </NavLink>
+            </li>
+            <li className='navbar-item slideInDown-3'>
+                <NavLink to="/portfolio" className='navbar-link'>
+                    Portfolio
+                </NavLink>
+            </li>
+            <li className='navbar-item slideInDown-4'>
+                <NavLink to="/contact" className='navbar-link'>
+                    Contact
+                </NavLink>
+            </li>
+        </ul>
+        <div className='navbar-burger burger-button' onClick={handleShowLinks}>
+            <span className='burger-bar'></span>
+        </div>
+    </nav>
+  )
+}
 
-                    <NavLink to="/">
-                        <p>Accueil</p>
-                    </NavLink>
-
-                    <NavLink to="/a-propos">
-                        <p>À propos</p>
-                    </NavLink>
-
-                    <NavLink to="/portfolio">
-                        <p>Portfolio</p>
-                    </NavLink>
-                    
-                    <NavLink to="/contact">
-                        <p>Contact</p>
-                    </NavLink>
-                </nav>
-            </div>
-        </header>
-    </div>
-    );
-};
-
-export default Navigation;
+export default NewNavigation
