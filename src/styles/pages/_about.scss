@@ -1,0 +1,36 @@
+.container-about {
+    margin-top: 5vh;
+    height: 80vh;
+    @include gradientBorderLeft
+}
+
+h3 {
+    margin-top: 5vh;
+}
+
+.container-text-about {
+    padding: 2em;
+    font-size: 26px;
+}
+
+.container-text-about > ol > li > a {
+    text-decoration: underline;
+}
+
+// RESPONSIVE TAB
+
+@media screen and (max-width: 960px) {
+
+    .container-about {
+        height: fit-content;
+    }
+
+    .container-text-about {
+        padding: 1.2em;
+    }
+
+    li {
+        font-size: 22px;
+        padding: 0.5em 0 0.5em 0;
+    }
+}
