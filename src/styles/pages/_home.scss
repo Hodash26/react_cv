@@ -403,24 +403,28 @@ h4 {
     }
 
     .about {
-        font-size: 26px;
-        padding: 15px;
+        font-size: 22px;
+        padding: 20px;
     }
 
     .square {
         margin: 5vh 0 5vh 0;
-        height: 11rem;
-        width: 11rem;
+        height: 14rem;
+        width: 14rem;
         font-size: 22px;
     }
 
     .parallelogram {
-        width: 11rem;
-        height: 11rem;
+        width: 14rem;
+        height: 14rem;
     }
 
     .container-card {
         height: auto;
+    }
+
+    .develop {
+        margin-bottom: 0;
     }
 
     .card {
@@ -455,4 +459,14 @@ h4 {
         width: 22px;
         height: 22px;
     }
+}
+
+//RESPONSIVE TINY MOBILE
+@media screen and (max-width: 385px) {
+
+    .square {
+        height: 10rem;
+        width: 10rem;
+    }
+
 }

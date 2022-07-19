@@ -34,6 +34,18 @@ $black-layer-blur : backdrop-filter blur(6px);
     border-style: solid;
 }
 
+@mixin gradientPortfolioHeXLeft {
+    border-image: linear-gradient(to left, #E6550F, #000000) 1;
+    border-width: 2px;
+    border-style: solid;
+}
+
+@mixin gradientPortfolioHeXRight {
+    border-image: linear-gradient(to right #E6550F, #000000) 1;
+    border-width: 2px;
+    border-style: solid;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;

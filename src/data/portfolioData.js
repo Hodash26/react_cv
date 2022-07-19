@@ -1,7 +1,7 @@
 export const portfolioData = [
   {
     id: 1,
-    name: 'ipsum.com',
+    name: 'HeX GROUP',
     languages: ['javascript','css'],
     languagesIcons: ['fab fa-js','fab fa-css3-alt'],
     source: 'http://www.github.com',
@@ -10,7 +10,7 @@ export const portfolioData = [
   },
   {
     id: 2,
-    name: 'lorem.fr',
+    name: 'Éden Rôliste',
     languages: ['javascript','react'],
     languagesIcons: ['fab fa-js','fab fa-react'],
     source: 'http://www.github.com',
@@ -19,7 +19,7 @@ export const portfolioData = [
   },
   {
     id: 3,
-    name: 'dolorset.fr',
+    name: 'Lyra System',
     languages: ['javascript','php','css'],
     languagesIcons: ['fab fa-js','fab fa-php','fab fa-css3-alt'],
     source: 'http://www.github.com',
@@ -28,7 +28,7 @@ export const portfolioData = [
   },
   {
     id: 4,
-    name: 'laboriosam.fr',
+    name: 'Urwebee',
     languages: ['javascript','php','react'],
     languagesIcons: ['fab fa-js','fab fa-php','fab fa-react'],
     source: 'http://www.github.com',
@@ -37,7 +37,7 @@ export const portfolioData = [
   },
   {
     id: 5,
-    name: 'repudiante.com',
+    name: 'Karel Blanckaert',
     languages: ['javascript','css'],
     languagesIcons: ['fab fa-js', 'fab fa-css3-alt'],
     source: 'http://www.github.com',
@@ -46,7 +46,7 @@ export const portfolioData = [
   },
   {
     id: 6,
-    name: 'test.io',
+    name: 'MBM Coaching',
     languages: ['javascript','react', 'css'],
     languagesIcons: ['fab fa-js','fab fa-react','fab fa-css3-alt'],
     source: 'http://www.github.com',
