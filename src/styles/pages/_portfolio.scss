@@ -2,7 +2,7 @@
     @include gradientBorderLeft;
 }
 
-.hex {
+.hex, .eden-roliste {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -39,12 +39,23 @@
     @include gradientPortfolioHeXLeft;
 }
 
-.portfolio-right > .btn-hex {
+.img-eden {
+    width: 12vw;
+    @include gradientPortfolioEdenLeft;
+}
+
+.btn-hex {
+    @include gradientPortfolioHeXRight;
+}
+
+.btn-hex, .btn-eden {
     font-size: 20px;
-    border-image: linear-gradient(to right, #E6550F, #000000) 1;
-    border-width: 2px;
     margin: 0;
     margin-top: 5vh;
+}
+
+.btn-eden {
+    @include gradientPortfolioEdenRight;
 }
 
 // RESPONSIVE TAB
