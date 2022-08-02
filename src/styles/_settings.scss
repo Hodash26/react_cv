@@ -58,6 +58,54 @@ $black-layer-blur : backdrop-filter blur(6px);
     border-style: solid;
 }
 
+@mixin gradientPortfolioLyraLeft {
+    border-image: linear-gradient(to left,#ffffff, #000000) 1;
+    border-width: 2px;
+    border-style: solid;
+}
+
+@mixin gradientPortfolioLyraRight {
+    border-image: linear-gradient(to right, #ffffff, #000000) 1;
+    border-width: 2px;
+    border-style: solid;
+}
+
+@mixin gradientPortfolioUrwebeeLeft {
+    border-image: linear-gradient(to left,#ffffff, #F3C622) 1;
+    border-width: 2px;
+    border-style: solid;
+}
+
+@mixin gradientPortfolioUrwebeeRight {
+    border-image: linear-gradient(to right, #ffffff, #F3C622) 1;
+    border-width: 2px;
+    border-style: solid;
+}
+
+@mixin gradientPortfolioKarelLeft {
+    border-image: linear-gradient(to left,#000000, #D8B255) 1;
+    border-width: 2px;
+    border-style: solid;
+}
+
+@mixin gradientPortfolioKarelRight {
+    border-image: linear-gradient(to right, #000000, #D8B255) 1;
+    border-width: 2px;
+    border-style: solid;
+}
+
+@mixin gradientPortfolioMbmLeft {
+    border-image: linear-gradient(to left,#ffffff, #3568B2) 1;
+    border-width: 2px;
+    border-style: solid;
+}
+
+@mixin gradientPortfolioMbmRight {
+    border-image: linear-gradient(to left,#ffffff, #3568B2) 1;
+    border-width: 2px;
+    border-style: solid;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;

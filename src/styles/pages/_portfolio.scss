@@ -2,7 +2,7 @@
     @include gradientBorderLeft;
 }
 
-.hex, .eden-roliste {
+.hex, .eden-roliste, .lyra, .urwebee, .karel, .mbm {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -40,23 +40,63 @@
 }
 
 .img-eden {
-    width: 12vw;
+    width: 200px;
     @include gradientPortfolioEdenLeft;
+}
+
+.img-lyra {
+    width: 200px;
+    @include gradientPortfolioLyraLeft;
+}
+
+.img-urwebee {
+    width: 250px;
+    padding: 2em;
+    @include gradientPortfolioUrwebeeLeft;
+}
+
+.img-karel {
+    width: 200px;
+    @include gradientPortfolioKarelLeft;
+    padding: 2em;
+}
+
+.img-mbm {
+    width: 400px;
+    @include gradientPortfolioMbmLeft;
+    padding: 2em;
 }
 
 .btn-hex {
     @include gradientPortfolioHeXRight;
 }
 
-.btn-hex, .btn-eden {
+.btn-eden {
+    @include gradientPortfolioEdenRight;
+}
+
+.btn-lyra {
+    @include gradientPortfolioLyraRight;
+}
+
+.btn-urwebee {
+    @include gradientPortfolioUrwebeeRight;
+}
+
+.btn-karel {
+    @include gradientPortfolioKarelRight;
+}
+
+.btn-mbm {
+    @include gradientPortfolioMbmRight;
+}
+
+.btn-hex, .btn-eden, .btn-lyra, .btn-urwebee, .btn-karel, .btn-mbm {
     font-size: 20px;
     margin: 0;
     margin-top: 5vh;
 }
 
-.btn-eden {
-    @include gradientPortfolioEdenRight;
-}
 
 // RESPONSIVE TAB
 
@@ -72,8 +112,11 @@
 
     .portfolio-left {
         border-right: 0;
-        border-bottom: 1px solid white;
         width: 100%;
+    }
+
+    .portfolio-right {
+        border-bottom: 1px solid white;
     }
 
     .btn-more {
@@ -101,6 +144,23 @@
     .img-hex {
         height: 180px;
         width: 180px;
+    }
+
+    .img-urwebee {
+        width: 200px;
+    }
+
+    .img-karel {
+        width: 150px;
+    }
+
+    .img-mbm {
+        width: 220px;
+        padding: 1em;
+    }
+
+    .btn-hex, .btn-eden, .btn-lyra, .btn-urwebee {
+        font-size: 18px;
     }
 
 }
