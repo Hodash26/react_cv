@@ -1,7 +1,7 @@
 import React from 'react';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer'
-// import edenOldSite from '../media/eden-site-old.pdf'
+import { NavLink } from 'react-router-dom';
 
 const Portfolio = () => {
     return (
@@ -20,8 +20,9 @@ const Portfolio = () => {
                         <p>L'objectif de cette alternance était de mettre à profit mes connaissances Wordpress et de les
                             perfectionner au service du site.
                         </p>
-
-                        <button className='btn-more'><a href=''>En savoir plus</a></button>
+                        <NavLink to="/hex">
+                            <button className='btn-more'>En savoir plus</button>
+                        </NavLink>
                     </div>
                     <div className='portfolio-right'>
                         <img className='img-hex' src="./media/hex-logo.png" alt="logo HeX GROUP"/>

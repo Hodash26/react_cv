@@ -157,25 +157,25 @@ const Home = () => {
             <div className='card-portfolio'>
                 <div className='square-portfolio left'>
                     <p className='text-square-portfolio'>HeX GROUP</p>
-                    <NavLink className='btn-portfolio' to="/hex/details">
+                    <NavLink className='btn-portfolio' to="/hex">
                         <button>EN SAVOIR PLUS</button>
                     </NavLink>
                 </div>
                 <div className='square-portfolio right'>
                     <p className='text-square-portfolio'>Éden Rôliste</p>
-                    <NavLink className='btn-portfolio' to="/eden-roliste/details">
+                    <NavLink className='btn-portfolio' to="/eden">
                         <button>EN SAVOIR PLUS</button>
                     </NavLink>
                 </div>
                 <div className='square-portfolio left urwebee'>
                     <p className='text-square-portfolio'>Projet Urwebee</p>
-                    <NavLink className='btn-portfolio' to="/urwebee/details">
+                    <NavLink className='btn-portfolio' to="/urwebee">
                         <button>EN SAVOIR PLUS</button>
                     </NavLink>
                 </div>
                 <div className='square-portfolio right'>
                     <p className='text-square-portfolio'>Lyra System</p>
-                    <NavLink className='btn-portfolio' to="/lyra-system/details">
+                    <NavLink className='btn-portfolio' to="/lyra">
                         <button>EN SAVOIR PLUS</button>
                     </NavLink>
                 </div>
@@ -190,15 +190,15 @@ const Home = () => {
                 <p>Jeux de rôle</p>
             </div>
             <div className='container-icon-text'>
-            <img className='icons' src={gamepad} alt='Controller icon'/>
+                <img className='icons' src={gamepad} alt='Controller icon'/>
                 <p>Jeux vidéo</p>
             </div>
             <div className='container-icon-text'>
-            <img className='icons' src={music} alt='Music icon'/>
+                <img className='icons' src={music} alt='Music icon'/>
                 <p>Musiques</p>
             </div>
             <div className='container-icon-text'>
-            <img className='icons' src={series} alt='series icon'/>
+                <img className='icons' src={series} alt='series icon'/>
                 <p>Séries</p>
             </div>
             <div className='container-icon-text'>
@@ -206,7 +206,7 @@ const Home = () => {
                 <p>Jeux de société</p>
             </div>
             <div className='container-icon-text'>
-            <img className='icons' src={discord} alt='discord icon'/>
+                <img className='icons' src={discord} alt='discord icon'/>
                 <p>Co-gérant de la Table des Rôlistes</p>
             </div>
         </div>

@@ -1,0 +1,93 @@
+.container-logo-hex {
+    display: flex;
+    justify-content: center;
+}
+
+.logo-hex {
+    width: 20vw;
+}
+
+.container-btn-hex {
+    text-align: center;
+}
+
+.container-btn-hex > button {
+    margin: 0 0 5vh 0;
+}
+
+.container-text-hex {
+    @include gradientPortfolioHeXLeft;
+    padding: 0 3em;
+}
+
+.container-text-hex > ul > li {
+    list-style-type: circle;
+    font-size: 22px;
+    padding-top: 15px;
+}
+
+.container-skills {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    font-size: 20px;
+}
+
+.container-icon-text {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.logo-wordpress, .logo-adobexd, .logo-balsamiq, .logo-elementor, .logo-mailjet, .logo-slider-revolution, .logo-teams, .logo-yoast {
+    width: 5vw;
+    margin: 10px 0;
+}
+
+.logo-mailjet {
+    width: 10vw;
+}
+
+// RESPONSIVE TAB
+
+@media screen and (max-width: 960px) {
+
+    .logo-hex {
+        width: 35vw;
+    }
+
+    .container-text-hex > ul > li {
+        font-size: 18px;
+    }
+
+    .logo-wordpress, .logo-adobexd, .logo-balsamiq, .logo-elementor, .logo-mailjet, .logo-slider-revolution, .logo-teams, .logo-yoast {
+        width: 10vw;
+    }
+
+    .logo-mailjet {
+        width: 15vw;
+    }
+}
+
+// RESPONSIVE MOBILE
+
+@media screen and (max-width: 480px) {
+
+    .logo-hex {
+        width: 50vw;
+    }
+
+    .container-text-hex {
+        padding: 0 2em;
+    }
+
+    .logo-wordpress, .logo-adobexd, .logo-balsamiq, .logo-elementor, .logo-mailjet, .logo-slider-revolution, .logo-teams, .logo-yoast {
+        width: 20vw;
+    }
+
+    .logo-mailjet {
+        width: 25vw;
+    }
+
+}

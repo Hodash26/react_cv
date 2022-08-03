@@ -101,7 +101,7 @@ $black-layer-blur : backdrop-filter blur(6px);
 }
 
 @mixin gradientPortfolioMbmRight {
-    border-image: linear-gradient(to left,#ffffff, #3568B2) 1;
+    border-image: linear-gradient(to right,#ffffff, #3568B2) 1;
     border-width: 2px;
     border-style: solid;
 }
@@ -171,6 +171,7 @@ button {
     font-size: 18px;
     margin: auto;
     color: $main-color;
+    cursor: pointer;
 }
 
 ul {
