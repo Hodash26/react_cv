@@ -1,0 +1,91 @@
+.container-logo-eden {
+    display: flex;
+    justify-content: center;
+}
+
+.logo-eden {
+    margin-top: 5vh;
+    width: 15vw;
+}
+
+.container-btn-eden {
+    text-align: center;
+}
+
+.container-btn-eden > button {
+    margin: 5vh 3vw;
+}
+
+.container-text-eden {
+    @include gradientPortfolioEdenLeft;
+    padding: 0 3em;
+}
+
+.container-text-eden > ul > li {
+    list-style-type: circle;
+    font-size: 22px;
+    padding-top: 15px;
+}
+
+.container-skills {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    font-size: 20px;
+}
+
+.container-icon-text {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.logo-wordpress, .logo-figma, .logo-filezilla, .logo-elementor, .logo-duplicator {
+    width: 5vw;
+    margin: 10px 0;
+}
+
+// RESPONSIVE TAB
+
+@media screen and (max-width: 960px) {
+
+    .logo-eden {
+        width: 35vw;
+    }
+
+    .container-text-hex > ul > li {
+        font-size: 18px;
+    }
+
+    .logo-wordpress, .logo-figma, .logo-filezilla, .logo-elementor, .logo-duplicator {
+        width: 10vw;
+    }
+
+    .container-skills > .container-icon-text > p {
+        font-size: 20px;
+    }
+
+}
+
+// RESPONSIVE MOBILE
+
+@media screen and (max-width: 480px) {
+
+    .logo-eden {
+        width: 50vw;
+    }
+
+    .container-btn-eden > button {
+        margin: 3vh 3vw;
+    }
+
+    .container-text-eden {
+        padding: 0 2em;
+    }
+
+    .logo-wordpress, .logo-figma, .logo-filezilla, .logo-elementor, .logo-duplicator {
+        width: 20vw;
+    }
+
+}

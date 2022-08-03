@@ -37,8 +37,9 @@ const Portfolio = () => {
                         <p>Éden avait besoin d'un nouveau site, qui serait facile d'accès et modifiable facilement et ou elle pourrait écrire des articles.</p>
                         <p>Ayant fait son 1er site en HTLM & CSS (de ce fait difficilement modifiable), j'opte pour Wordpress pour le second site.
                         </p>
-
-                        <button className='btn-more'><a href=''>En savoir plus</a></button>
+                        <NavLink to="/eden">
+                        <button className='btn-more'>En savoir plus</button>
+                        </NavLink>
                     </div>
                     <div className='portfolio-right'>
                         <img className='img-eden' src="./media/eden-roliste.png" alt="logo Éden Rôliste"/>
@@ -54,8 +55,9 @@ const Portfolio = () => {
                         <p>C'est un Système d'acquisition & de supervision de données pour la Stratégie de Maîtrise de la Contamination (CCS).</p>
                         <p>L'objectif pour ce site sous Wordpress était de créer les maquettes par rapport aux wireframes pour ensuite développer ces maquettes sur le site.
                         </p>
-
-                        <button className='btn-more'><a href=''>En savoir plus</a></button>
+                        <NavLink to="/lyra">
+                            <button className='btn-more'>En savoir plus</button>
+                        </NavLink>
                     </div>
                     <div className='portfolio-right'>
                         <img className='img-lyra' src="./media/lyra-logo.png" alt="logo LYRA SYSTEM"/>

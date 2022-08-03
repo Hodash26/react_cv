@@ -50,6 +50,9 @@ const Hex = () => {
                     <li>
                         MindMap du site HeX
                     </li>
+                    <li>
+                        Commits & tests sur l'environnement de developpement sur GitHub 
+                    </li>
                 </ul>
 
                 <h2>Technologies / Plugins / Logiciels</h2>
@@ -86,9 +89,11 @@ const Hex = () => {
                         <img className='logo-balsamiq' src="./media/balsamiq-logo.png" alt="logo Balsamiq"/>
                         <p>Balsamiq</p>
                     </div>
+                    <div className='container-icon-text'>
+                        <img className='logo-balsamiq' src="./media/github-logo.png" alt="logo GitHub"/>
+                        <p>GitHub</p>
+                    </div>
                 </div>
-
-
             </div>
 
 
