@@ -1,6 +1,7 @@
 import React from 'react';
 import Navigation from '../../components/Navigation';
 import Footer from '../../components/Footer';
+import { NavLink } from 'react-router-dom';
 
 
 
@@ -8,6 +9,7 @@ const Hex = () => {
     return (
         <div>
             <Navigation />
+            
 
             <div className='container-logo-hex'>
                 <img className='logo-hex' src="./media/hex-logo.png" alt="logo HeX GROUP"/>
@@ -96,7 +98,9 @@ const Hex = () => {
                 </div>
             </div>
 
-
+            <div className='go-back'>
+                <NavLink to="/portfolio"><img className='white-arrow' src='./media/white-arrow.png' alt='Flèche blanche'></img>Revenir à portfolio</NavLink>
+            </div>
             <Footer />
         </div>
     );

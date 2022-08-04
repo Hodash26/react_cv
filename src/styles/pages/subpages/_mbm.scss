@@ -1,0 +1,68 @@
+.container-logo-mbm {
+    display: flex;
+    justify-content: center;
+}
+
+.logo-mbm {
+    width: 35vw;
+    margin-top: 5vh;
+}
+
+.container-btn-mbm {
+    text-align: center;
+}
+
+.container-btn-mbm > button {
+    margin: 5vh 0;
+}
+
+.logo-woocommerce {
+    width: 8vw
+}
+
+.container-text-mbm {
+    @include gradientPortfolioMbmLeft;
+    padding: 0 3em;
+}
+
+.container-text-mbm > ul > li {
+    list-style-type: circle;
+    font-size: 22px;
+    padding-top: 15px;
+}
+
+// RESPONSIVE TAB
+
+@media screen and (max-width: 960px) {
+
+    .logo-mbm {
+        width: 50vw;
+    }
+
+    .container-text-mbm > ul > li {
+        font-size: 18px;
+    }
+
+    .logo-woocommerce {
+        width: 12vw;
+    }
+
+}
+
+// RESPONSIVE MOBILE
+
+@media screen and (max-width: 480px) {
+
+    .logo-mbm {
+        width: 75vw;
+    }
+
+    .container-text-mbm {
+        padding: 0 2em;
+    }
+
+    .logo-woocommerce {
+        width: 25vw;
+    }
+
+}

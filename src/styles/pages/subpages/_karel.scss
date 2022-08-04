@@ -1,0 +1,72 @@
+.container-logo-karel {
+    display: flex;
+    justify-content: center;
+}
+
+.logo-karel {
+    width: 15vw;
+    margin-top: 5vh;
+}
+
+.container-btn-karel {
+    text-align: center;
+}
+
+.container-btn-karel > button {
+    margin: 5vh 0;
+}
+
+.container-text-karel {
+    @include gradientPortfolioKarelLeft;
+    padding: 0 3em;
+}
+
+.container-text-karel > ul > li {
+    list-style-type: circle;
+    font-size: 22px;
+    padding-top: 15px;
+}
+
+// RESPONSIVE TAB
+
+@media screen and (max-width: 960px) {
+
+    .logo-karel {
+        width: 20vw;
+    }
+
+    .container-text-karel > ul > li {
+        font-size: 18px;
+    }
+
+    .logo-html, .logo-css, .logo-javascript, .logo-figma, .logo-github {
+        width: 10vw;
+    }
+
+    .logo-php {
+        width: 15vw;
+    }
+
+}
+
+// RESPONSIVE MOBILE
+
+@media screen and (max-width: 480px) {
+
+    .logo-karel {
+        width: 30vw;
+    }
+
+    .container-text-karel {
+        padding: 0 2em;
+    }
+
+    .logo-github {
+        width: 20vw;
+    }
+
+    .logo-php {
+        width: 25vw;
+    }
+
+}

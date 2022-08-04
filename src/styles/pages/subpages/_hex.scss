@@ -49,6 +49,16 @@
     width: 10vw;
 }
 
+.go-back {
+    text-align: end;
+    margin-top: 20px;
+}
+
+.white-arrow {
+    width: 50px;
+    padding-right: 15px;
+}
+
 // RESPONSIVE TAB
 
 @media screen and (max-width: 960px) {
@@ -88,6 +98,10 @@
 
     .logo-mailjet {
         width: 25vw;
+    }
+
+    .go-back {
+        text-align: center;
     }
 
 }

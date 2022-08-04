@@ -73,7 +73,9 @@ const Portfolio = () => {
                         <p>L'objectif de ce site était de valider les différentes compétences apprissent lors de l'année de licence professionnelle.
                         </p>
 
-                        <button className='btn-more'><a href=''>En savoir plus</a></button>
+                        <NavLink to="/urwebee">
+                        <button className='btn-more'>En savoir plus</button>
+                        </NavLink>
                     </div>
                     <div className='portfolio-right'>
                         <img className='img-urwebee' src="./media/logo-urwebee.png" alt="logo Urwebee"/>
@@ -91,7 +93,9 @@ const Portfolio = () => {
                         <p>L'objectif de ce site était de pouvoir réaliser ce projet dans un temps très court en répondant aux attentes du client.
                         </p>
 
-                        <button className='btn-more'><a href=''>En savoir plus</a></button>
+                        <NavLink to="/karel">
+                        <button className='btn-more'>En savoir plus</button>
+                        </NavLink>
                     </div>
                     <div className='portfolio-right'>
                         <img className='img-karel' src="./media/karel-logo.png" alt="logo Karel Blanckaert"/>
@@ -107,7 +111,9 @@ const Portfolio = () => {
                         <p>L'objectif de ce site était d'avoir une première expérience avec un client réel et répondre à ses attentes.
                         </p>
 
-                        <button className='btn-more'><a href=''>En savoir plus</a></button>
+                        <NavLink to="/mbm">
+                        <button className='btn-more'>En savoir plus</button>
+                        </NavLink>
                     </div>
                     <div className='portfolio-right'>
                         <img className='img-mbm' src="./media/mbm-logo.png" alt="logo MBM Coaching"/>

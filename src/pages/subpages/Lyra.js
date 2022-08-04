@@ -1,6 +1,7 @@
 import React from 'react';
 import Navigation from '../../components/Navigation';
 import Footer from '../../components/Footer';
+import { NavLink } from 'react-router-dom';
 
 
 const Lyra = () => {
@@ -77,8 +78,9 @@ const Lyra = () => {
                         <p>GitHub</p>
                     </div>
                 </div>
-
-
+            </div>
+            <div className='go-back'>
+                <NavLink to="/portfolio"><img className='white-arrow' src='./media/white-arrow.png' alt='Flèche blanche'></img>Revenir à portfolio</NavLink>
             </div>
 
 
