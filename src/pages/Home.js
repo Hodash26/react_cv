@@ -43,12 +43,12 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className='square simple'>
+            <div className='square parallelogram'>
                 <div className='square-container-text'>
                     <p className='square-text'>TITRE PRO DEVELOPPEUR WEB</p>
                 </div>
             </div>
-            <div className='square parallelogram'>
+            <div className='square lozenge'>
                 <div className='square-container-text'>
                     <p className='square-text'> LICENCE PRO CRÉA WEB</p>
                 </div>

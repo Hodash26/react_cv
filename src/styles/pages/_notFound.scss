@@ -1,6 +1,6 @@
 .notFound {
     @include verticalCenter;
-    height: 70vh;
+    height: 74vh;
     flex-direction: column;
     font-size: 28px;
     text-align: center;
@@ -9,6 +9,6 @@
 .btnAccueil {
     margin-top: 2rem;
     font-size: 24px;
-    border: 2px solid black;
+    @include gradientBorderRight;
     padding: 5px 1rem 5px 1rem;
 }

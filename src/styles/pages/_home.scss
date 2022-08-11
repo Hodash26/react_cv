@@ -4,6 +4,7 @@
 
 .presentation {
     display: flex;
+    align-items: center;
     margin-top: 50px;
 }
 
@@ -61,19 +62,24 @@
     background-size: cover;
 }
 
-.simple {
+.parallelogram {
     @include blobBackground;
     background-size: cover;
+    transform: skew(-10deg)
 }
 
-.parallelogram {
+.parallelogram > .square-container-text > p {
+    transform: skew(10deg);
+}
+
+.lozenge {
     @include stackedWave;
     transform: rotate(45deg);
     width: auto;
     background-size: cover;
 }
 
-.parallelogram p {
+.lozenge p {
     transform: rotate(-45deg)
 }
 
@@ -272,6 +278,15 @@ h4 {
     flex-wrap: wrap;
 }
 
+.container-hobbies > .container-icon-text {
+    transition: 0.5s;
+}
+
+.container-hobbies > .container-icon-text:hover {
+    transform: scale(1.1);
+    transition: 300ms ease-in-out;
+}
+
 .container-icon-text {
     margin: 20px 30px 20px 30px;
     display: flex;
@@ -324,7 +339,7 @@ h4 {
         margin: 0;
     }
 
-    .parallelogram {
+    .lozenge {
         width: 15rem;
     }
 
@@ -377,10 +392,6 @@ h4 {
         margin-bottom: 20px;
     }
 
-    .icons {
-        height: 30px;
-    }
-
     .container-icon-text > p {
         font-size: 18px;
     }
@@ -414,7 +425,7 @@ h4 {
         font-size: 22px;
     }
 
-    .parallelogram {
+    .lozenge {
         width: 14rem;
         height: 14rem;
     }
@@ -453,6 +464,10 @@ h4 {
 
     .square-portfolio {
         width: 100%;
+    }
+
+    .icons {
+        height: 60px;
     }
 
     .icon-footer {

@@ -25,7 +25,7 @@ const App = () => {
           <Route path='/hex' element={<Hex/>} />
           <Route path='/lyra' element={<Lyra/>} />
           <Route path='/urwebee' element={<Urwebee/>} />
-          <Route path='/Eden' element={<Eden/>} />
+          <Route path='/eden' element={<Eden/>} />
           <Route path='/karel' element={<Karel/>} />
           <Route path='/mbm' element={<Mbm/>} />
           <Route path='*' element={<NotFound/>} />

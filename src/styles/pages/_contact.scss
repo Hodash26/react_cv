@@ -1,0 +1,18 @@
+.contact {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+    margin: 0.5rem 0;
+    padding: 0.3rem;
+    @include gradientBorderRight;
+}
