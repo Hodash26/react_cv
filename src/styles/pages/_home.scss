@@ -1,5 +1,5 @@
 .img-FB {
-    width: 50%;
+    width: 40%;
 }
 
 .presentation {
@@ -304,6 +304,12 @@ h4 {
     width: 50px;
     width: auto;
     color: white;
+}
+
+@media screen and (max-width: 1200px) {
+    .presentation-text {
+        height: 15rem;
+    }
 }
 
 // RESPONSIVE TAB
