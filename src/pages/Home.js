@@ -15,7 +15,7 @@ const Home = () => {
             <Navigation />
 
             <div className='presentation'>
-                    <img className="img-FB" src="./media/img-florent.jpg" alt="Florent Bailly"/>
+                    <img className="img-FB" src="./media/img-florent.JPG" alt="Florent Bailly"/>
                     <p className='presentation-text'>
                         Développeur Web Junior
                     </p>
