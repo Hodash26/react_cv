@@ -15,7 +15,7 @@ function NewNavigation() {
   return (
     <nav className={`navbar ${showLinks ? "show-nav" : "hide-nav"} `}>
         <div className='navbar-title'>
-            <h1>Florent Bailly</h1>
+            <strong><h1>Florent Bailly</h1></strong>
         </div>
         <ul className='navbar-links'>
             <li className='navbar-item slideInDown-1'>

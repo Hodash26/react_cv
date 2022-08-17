@@ -18,6 +18,14 @@
     font-size: 48px;
     border: solid white 2px;
     border-left: 0;
+    -webkit-mask-image: linear-gradient(-75deg, rgba(53, 104, 178, .6) 30%, #3568B2 50%, rgba(53, 104, 178, .6) 70%);
+    -webkit-mask-size: 200%;
+    animation: shine 2s linear infinite;
+}
+
+@keyframes shine {
+  from { -webkit-mask-position: 150%; }
+  to { -webkit-mask-position: -50%; }
 }
 
 .about {
