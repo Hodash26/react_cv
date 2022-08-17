@@ -2,6 +2,7 @@ import React from 'react';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import { NavLink } from 'react-router-dom';
+import Typical from 'react-typical';
 import series from '../media/series.svg'
 import diced20 from '../media/dice-d20.svg'
 import diced6 from '../media/dice-d6.svg'
@@ -16,9 +17,9 @@ const Home = () => {
 
             <div className='presentation'>
                     <img className="img-FB" src="./media/img-florent.JPG" alt="Florent Bailly"/>
-                    <p className='presentation-text'>
-                        Développeur Web Junior
-                    </p>
+                    <Typical className="presentation-text" loop={Infinity} 
+                        steps={['Hello !', 2000 ,'Je suis développeur web junior', 2000,
+                        'Je suis passionné', 2000,]}/>
             </div>
 
             <div className='about'>
