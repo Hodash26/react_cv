@@ -32,26 +32,46 @@ const Home = () => {
         <h2>ÉTUDES</h2>
 
         <div className='school'>
-            <div className='square oval'>
-                <div className='square-container-text'>
-                    <p className='square-text'>BAC STMG</p>
+            <div className='square oval flip'>
+                <div className='content'>
+                    <div className='square-container-text front'>
+                        <p className='square-text'>BAC STMG</p>
+                    </div>
+                    <div className='back'>
+                        <p className='square-text'>2014-2016</p>
+                    </div>
                 </div>
             </div>
 
-            <div className='square half'>
-                <div className='square-container-text'>
-                    <p className='square-text'>BTS ASSISTANT DE GESTION PME-PMI</p>
+            <div className='square half flip'>
+                <div className='content'>
+                    <div className='square-container-text front'>
+                        <p className='square-text'>BTS ASSISTANT DE GESTION PME-PMI</p>
+                    </div>
+                    <div className='back'>
+                        <p className='square-text'>2016-2018</p>
+                    </div>
                 </div>
             </div>
 
-            <div className='square parallelogram'>
-                <div className='square-container-text'>
-                    <p className='square-text'>TITRE PRO DEVELOPPEUR WEB</p>
+            <div className='square parallelogram flip'>
+                <div className='content'>
+                    <div className='square-container-text front'>
+                        <p className='square-text skew'>TITRE PRO DEVELOPPEUR WEB</p>
+                    </div>
+                    <div className='back'>
+                        <p className='square-text skew'>2019</p>
+                    </div>
                 </div>
             </div>
-            <div className='square lozenge'>
-                <div className='square-container-text'>
-                    <p className='square-text'> LICENCE PRO CRÉA WEB</p>
+            <div className='square lozenge flip'>
+                <div className='content'>
+                    <div className='square-container-text front'>
+                        <p className='square-text'> LICENCE PRO CRÉA WEB</p>
+                    </div>
+                    <div className='back'>
+                        <p className='square-text'>2020-2021</p>
+                    </div>
                 </div>
             </div>
         </div>

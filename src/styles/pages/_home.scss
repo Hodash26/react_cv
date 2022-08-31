@@ -1,3 +1,5 @@
+// LARGE SCREEN
+
 .img-FB {
     width: 40%;
 }
@@ -18,15 +20,8 @@
     font-size: 48px;
     border: solid white 2px;
     border-left: 0;
-    // -webkit-mask-image: linear-gradient(-75deg, rgba(53, 104, 178, .6) 30%, #3568B2 50%, rgba(53, 104, 178, .6) 70%);
-    // -webkit-mask-size: 200%;
-    // animation: shine 2s linear infinite;
 }
 
-// @keyframes shine {
-//   from { -webkit-mask-position: 150%; }
-//   to { -webkit-mask-position: -50%; }
-// }
 
 .styles_typicalWrapper__1_Uvh::after {
     z-index: -1;
@@ -50,12 +45,55 @@
     margin: 4em;
 }
 
+// Start flip card
+
+.flip {
+    position: relative;
+    perspective: 500px;
+}
+
+.content {
+    @include verticalCenter;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.flip:hover .content {
+    transform: rotateY(180deg) ;
+    transition: transform 0.5s;
+}
+
+.front,
+.back {
+    position: absolute;
+    backface-visibility: hidden;
+    -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, 0.6) 30%, #000000 50%, rgba(0, 0, 0, 0.6) 70%);
+    -webkit-mask-size: 200%;
+    animation: shine 2s linear infinite;
+}
+
+@keyframes shine {
+  from { -webkit-mask-position: 150%; }
+  to { -webkit-mask-position: -50%; }
+}
+
+.back {
+    transform: rotateY(180deg);
+  }
+
+// End flip card
+
 .square {
     font-size: 24px;
     height: 15rem;
     width: 15rem;
     margin: 3rem;
     border: 1px solid white
+}
+
+.skew {
+    transform: skew(+10deg);
 }
 
 .oval {
@@ -87,7 +125,6 @@
 .lozenge {
     @include stackedWave;
     transform: rotate(45deg);
-    width: auto;
     background-size: cover;
 }
 
@@ -317,6 +354,13 @@ h4 {
     width: auto;
     color: white;
 }
+
+// DESKTOP
+
+@media screen and (max-width: 1920px) {
+
+}
+
 
 @media screen and (max-width: 1200px) {
     .presentation-text {

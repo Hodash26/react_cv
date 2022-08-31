@@ -19,8 +19,27 @@
 }
 
 .btn-more {
-    margin-top: 5vh;
     font-size: 20px;
+}
+
+.container-btn-more > a > .btn-more{
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    transition: 0.5s;
+}
+
+.container-btn-more >a > .btn-more:hover {
+    cursor: pointer;
+    transition: 300ms ease-in-out;
+    text-decoration-color: black;
+    background-color: white;
+    color: black;
+}
+
+.container-btn-more {
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
 }
 
 .portfolio-left, .portfolio-right {
@@ -35,7 +54,6 @@
 
 .img-hex {
     width: 200px;
-    height: 200px;
     @include gradientPortfolioHeXLeft;
 }
 
