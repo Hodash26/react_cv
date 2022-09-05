@@ -30,7 +30,7 @@ const Eden = () => {
                         Amélioration des compétences via le plugin Elementor
                     </li>
                     <li>
-                        Amélioration des compétences sur Wordpress
+                        Amélioration des compétences sur WordPress
                     </li>
                     <li>
                         Utilisation du plugin Duplicator afin de faire des sauvegardes du site
@@ -39,7 +39,7 @@ const Eden = () => {
                         Utilisation du plugin GDPR Cookie Consent pour la gestion de la loi sur le RGPD
                     </li>
                     <li>
-                        Utilisation du plugin Timeline widget afin de constuire la section parcours
+                        Utilisation du plugin Timeline Widget afin de constuire la section "parcours"
                     </li>
                     <li>
                         Utilisation du plugin Jupiter X Core pour gérer l'envoi des mails depuis le site
@@ -56,7 +56,7 @@ const Eden = () => {
                 <div className='container-skills'>
                     <div className='container-icon-text'>
                         <img className='logo-wordpress' src="./media/wordpress-logo.png" alt="logo Wordpress"/>
-                        <p>Wordpress</p>
+                        <p>WordPress</p>
                     </div>
                     <div className='container-icon-text'>
                         <img className='logo-duplicator' src="./media/duplicator-logo.png" alt="logo Duplicator"/>

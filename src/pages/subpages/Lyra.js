@@ -34,16 +34,16 @@ const Lyra = () => {
                         Création de slide & acquisition de compétences via le plugin Slider Revolution
                     </li>
                     <li>
-                        Amélioration des compétences sur Wordpress
+                        Amélioration des compétences sur WordPress
                     </li>
                     <li>
-                        Relever de traduction & integration en anglais
+                        Relevé de traduction & integration en anglais
                     </li>
                     <li>
                         Contrôle qualité des textes concernant la plaquette des prix 
                     </li>
                     <li>
-                        Commits & tests sur l'environnement de developpement sur GitHub 
+                        Commits & tests sur l'environnement de développement sur GitHub 
                     </li>
                 </ul>
 
@@ -51,7 +51,7 @@ const Lyra = () => {
                 <div className='container-skills'>
                     <div className='container-icon-text'>
                         <img className='logo-wordpress' src="./media/wordpress-logo.png" alt="logo Wordpress"/>
-                        <p>Wordpress</p>
+                        <p>WordPress</p>
                     </div>
                     <div className='container-icon-text'>
                         <img className='logo-slider-revolution' src="./media/slider-revolution-logo.png" alt="logo Slider Revolution"/>

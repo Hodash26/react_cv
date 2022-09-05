@@ -3,12 +3,16 @@ import envelope from '../icons/envelope.svg';
 import github from '../icons/github.svg';
 import linkedin from '../icons/linkedin.svg';
 import phone from '../icons/phone.svg';
+import pdf from '../icons/pdf.svg';
 
 const Footer = () => {
     return (
         <div>
             <footer>
                 <div className='container-footer'>
+                    <a href="./media/CV_2022.pdf" target="_blank" rel="noopener noreferrer" >
+                        <img className='icon-footer' src={pdf} alt='PDF icon'/>
+                    </a>
                     <a href="https://github.com/Hodash26" target="_blank" rel="noopener noreferrer">
                         <img className='icon-footer' src={github} alt='GitHub icon'/>
                     </a>

@@ -38,13 +38,13 @@ const Hex = () => {
                         Création de slide & acquisition de compétences via le plugin Slider Revolution
                         </li>
                     <li>
-                        Amélioration des compétences sur Wordpress
+                        Amélioration des compétences sur WordPress
                     </li>
                     <li>
                         Changements des slides & des actus sur la page d'accueil chaque semaine
                     </li>
                     <li>
-                        Relever de traduction & integration en anglais & Neerlandais
+                        Relevé de traduction & intégration en anglais & néerlandais
                     </li>
                     <li>
                         Création de campagne d'emailing et du mail en question via Mailjet
@@ -53,15 +53,15 @@ const Hex = () => {
                         MindMap du site HeX
                     </li>
                     <li>
-                        Commits & tests sur l'environnement de developpement sur GitHub 
+                        Commits & tests sur l'environnement de développement sur GitHub 
                     </li>
                 </ul>
 
                 <h2>Technologies / Plugins / Logiciels</h2>
                 <div className='container-skills'>
                     <div className='container-icon-text'>
-                        <img className='logo-wordpress' src="./media/wordpress-logo.png" alt="logo Wordpress"/>
-                        <p>Wordpress</p>
+                        <img className='logo-wordpress' src="./media/wordpress-logo.png" alt="logo WordPress"/>
+                        <p>WordPress</p>
                     </div>
                     <div className='container-icon-text'>
                         <img className='logo-slider-revolution' src="./media/slider-revolution-logo.png" alt="logo Slider Revolution"/>

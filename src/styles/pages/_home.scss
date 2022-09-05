@@ -4,6 +4,10 @@
     width: 40%;
 }
 
+.horizontal {
+    display: none;
+}
+
 .presentation {
     display: flex;
     align-items: center;
@@ -11,12 +15,11 @@
 }
 
 .presentation-text {
-    @include verticalCenter;
     margin: 4vh 0;
-    padding: 2em;
+    padding: 80px;
     text-align: center;
     width: 60vw;
-    height: 20rem;
+    height: auto;
     font-size: 48px;
     border: solid white 2px;
     border-left: 0;
@@ -130,6 +133,10 @@
 
 .lozenge p {
     transform: rotate(-45deg)
+}
+
+.lozenge > .content > .back > .square-text {
+    padding: 30px;
 }
 
 .square-container-text {
@@ -364,7 +371,7 @@ h4 {
 
 @media screen and (max-width: 1200px) {
     .presentation-text {
-        height: 15rem;
+        height: 17rem;
     }
 }
 
@@ -373,21 +380,28 @@ h4 {
 @media screen and (max-width: 960px) {
 
     .presentation {
-        display: block;
-        text-align: center;
+        @include verticalCenter;
+        flex-wrap: wrap;
     }
 
     .img-FB {
         width: 80%;
     }
 
+    .vertical {
+        display: none;
+    }
+
+    .horizontal {
+        display: block;
+    }
+
     .presentation-text {
-        @include verticalCenter;
-        width: auto;
-        margin: -0.2em 15vw 0 15vw;
-        text-align: center;
-        font-size: 32px;
-        height: 5em;
+        width: 90%;
+        margin: 0 12vw 0 12vw;
+        font-size: 30px;
+        height: 6em;
+        padding: 40px;
         border-top: 0;
         border-left: 2px solid white;
     }
@@ -472,7 +486,7 @@ h4 {
     }
 
     .presentation-text {
-        margin: -0.2em 5vw 0 5vw;
+        margin: 0 5vw 0 5vw;
     }
 
     .about {

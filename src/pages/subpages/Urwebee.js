@@ -21,8 +21,12 @@ const Urwebee = () => {
             <div className='container-text-urwebee'>
                 <h2>Compétences</h2>
                 <ul>
-                    <li>Veille & croisement des ressources pour l'identité du site.</li>
-                    <li>Création d'une charte graphique avec logo, polices d'écritures, couleurs</li>
+                    <li>
+                        Veille & croisement des ressources pour l'identité du site
+                    </li>
+                    <li>
+                        Création d'une charte graphique avec logo, polices d'écritures, couleurs
+                    </li>
                     <li>
                         Création de wireframes & maquettes interactifs avec Figma pour le site
                     </li>
@@ -39,13 +43,13 @@ const Urwebee = () => {
                         Consolidation des acquis en HTML & CSS
                     </li>
                     <li>
-                        Integration d'une bibliothèque d'animation (Animate On Scroll)
+                        Intégration d'une bibliothèque d'animation (Animate On Scroll)
                     </li>
                     <li>
-                        Utilisation de Javascript pour le menu burger & pour le changement de couleur au scroll
+                        Utilisation de JavaScript pour le menu burger & pour le changement de couleur au scroll
                     </li>
                     <li>
-                        Commits & tests sur l'environnement de developpement sur GitHub 
+                        Commits & tests sur l'environnement de développement sur GitHub 
                     </li>
                 </ul>
 
@@ -61,7 +65,7 @@ const Urwebee = () => {
                     </div>
                     <div className='container-icon-text'>
                         <img className='logo-javascript' src="./media/js-logo.png" alt="logo Javascript"/>
-                        <p>Javascript</p>
+                        <p>JavaScript</p>
                     </div>
                     <div className='container-icon-text'>
                         <img className='logo-php' src="./media/php-logo.png" alt="logo PHP"/>

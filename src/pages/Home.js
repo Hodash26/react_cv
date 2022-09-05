@@ -16,7 +16,8 @@ const Home = () => {
             <Navigation />
 
             <div className='presentation'>
-                    <img className="img-FB" src="./media/img-florent.JPG" alt="Florent Bailly"/>
+                    <img className="img-FB horizontal" src="./media/img-fb-horizontal.jpg" alt="Florent Bailly"/>
+                    <img className="img-FB vertical" src="./media/img-fb-vertical.jpg" alt="Florent Bailly"/>
                     <Typical className="presentation-text" loop={Infinity} 
                         steps={['Hello !', 2000 ,'Je suis développeur web junior', 2000,
                         'Je suis passionné', 2000,]}/>
@@ -24,8 +25,8 @@ const Home = () => {
 
             <div className='about'>
                 <p>Passioné du web & d'informatique, je me suis reconverti dans ce domaine depuis juin 2019.
-                    Depuis ce jour, je ne cesse de me perfectionner en tant que développeur front-end.
-                    En oscillant entre projets d'écoles, projets personnels & en m'auto-formant.
+                    Depuis ce jour, je ne cesse de me perfectionner en tant que développeur front-end
+                    en oscillant entre projets d'écoles, projets personnels & en m'autoformant.
                 </p>
             </div>
 
@@ -86,7 +87,7 @@ const Home = () => {
                 <div className='con-text'>
                     <h3 className='name-card'>Alternance HeX</h3>
                     <p className='date'>janvier 2020 ~ août 2020</p>
-                    <p>- Developpement Wordpress</p>
+                    <p>- Développement WordPress</p>
                     <p>- Construction E-mailing</p>
                     <p>- Wireframes & Maquettes</p>
                     <p>- Travail en équipe</p>
@@ -169,7 +170,7 @@ const Home = () => {
 
         <div className='container-portfolio'>
             <div className='text-left'>
-                <p>Grâce à des projets d'écoles, des projets personnels, projets d'alternance et de stage j'ai pu
+                <p>Grâce à des projets d'écoles, personnels, d'alternance et de stage j'ai pu
                     mettre mes compétences aux services des autres toujours dans une dynamique d'amélioration continue des
                     techniques et des langages de programmation que j'utilise.
                 </p>
@@ -216,7 +217,7 @@ const Home = () => {
             </div>
             <div className='container-icon-text'>
                 <img className='icons' src={music} alt='Music icon'/>
-                <p>Musiques</p>
+                <p>Musique</p>
             </div>
             <div className='container-icon-text'>
                 <img className='icons' src={series} alt='series icon'/>

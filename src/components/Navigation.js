@@ -10,8 +10,6 @@ function NewNavigation() {
         setShowLinks(!showLinks)
     }
 
-    console.log(showLinks)
-
   return (
     <nav className={`navbar ${showLinks ? "show-nav" : "hide-nav"} `}>
         <div className='navbar-title'>
@@ -24,8 +22,8 @@ function NewNavigation() {
                 </NavLink>
             </li>
             <li className='navbar-item slideInDown-2'>
-                <NavLink to="/a-propos" className='navbar-link'>
-                    A propos
+                <NavLink to="/conception" className='navbar-link'>
+                    Conception
                 </NavLink>
             </li>
             <li className='navbar-item slideInDown-3'>

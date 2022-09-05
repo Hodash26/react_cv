@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import Home from './pages/Home';
-import About from './pages/About';
+import Conception from './pages/Conception';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 import NotFound from './pages/NotFound';
@@ -19,7 +19,7 @@ const App = () => {
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Home/>} />
-          <Route path='/a-propos' element={<About/>} />
+          <Route path='/conception' element={<Conception/>} />
           <Route path='/portfolio' element={<Portfolio/>} />
           <Route path='/contact' element={<Contact/>} />
           <Route path='/hex' element={<Hex/>} />

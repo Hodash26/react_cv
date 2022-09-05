@@ -27,7 +27,7 @@ const Karel = () => {
                         Construction des pages en fonction des wireframes & des maquettes
                     </li>
                     <li>
-                        Amélioration des compétences sur Wordpress notamment avec ACF
+                        Amélioration des compétences sur WordPress notamment avec ACF
                     </li>
                     <li>
                         Amélioration des compétences en PHP
@@ -36,7 +36,7 @@ const Karel = () => {
                         Travail en groupe pour l'élaboration du projet & rendez-vous régulier avec le client
                     </li>
                     <li>
-                        Commits & tests sur l'environnement de developpement sur GitHub 
+                        Commits & tests sur l'environnement de développement sur GitHub 
                     </li>
                 </ul>
 
@@ -44,7 +44,7 @@ const Karel = () => {
                 <div className='container-skills'>
                     <div className='container-icon-text'>
                         <img className='logo-wordpress' src="./media/wordpress-logo.png" alt="logo Wordpress"/>
-                        <p>Wordpress</p>
+                        <p>WordPress</p>
                     </div>
                     <div className='container-icon-text'>
                         <img className='logo-php' src="./media/php-logo.png" alt="logo PHP"/>
