@@ -1,7 +1,7 @@
 // LARGE SCREEN
 
 .img-FB {
-    width: 40%;
+    width: 30vw;
 }
 
 .horizontal {
@@ -15,6 +15,7 @@
 }
 
 .presentation-text {
+    z-index: -1;
     margin: 4vh 0;
     padding: 80px;
     text-align: center;

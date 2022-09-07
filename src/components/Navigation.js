@@ -10,6 +10,7 @@ function NewNavigation() {
         setShowLinks(!showLinks)
     }
 
+
   return (
     <nav className={`navbar ${showLinks ? "show-nav" : "hide-nav"} `}>
         <div className='navbar-title'>
