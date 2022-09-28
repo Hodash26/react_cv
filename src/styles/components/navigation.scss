@@ -40,6 +40,7 @@
     background: transparent;
     border: none;
     display: none;
+    z-index: 100;
 }
 
 .active {
@@ -68,6 +69,12 @@
         visibility: hidden;
         background-color: #000;
         transition: all 0.8s ease-out;
+        z-index: 100;
+    }
+
+    .burger-button {
+        position: fixed;
+        margin-right: 4vw;
     }
 
     .show-nav .navbar-links {

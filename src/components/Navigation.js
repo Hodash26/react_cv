@@ -4,10 +4,16 @@ import { NavLink } from 'react-router-dom';
 
 function NewNavigation() {
 
-    const [showLinks, setShowLinks] = useState(false)
+    const [showLinks, setShowLinks] = useState(false);
+
+    const [stickyBurger, setStickyBurger] = useState(false);
 
     const handleShowLinks = () => {
         setShowLinks(!showLinks)
+    }
+
+    const handleStickyBurger = () => {
+        setStickyBurger(!stickyBurger)
     }
 
 
@@ -38,8 +44,8 @@ function NewNavigation() {
                 </NavLink>
             </li>
         </ul>
-        <div className='navbar-burger burger-button' onClick={handleShowLinks}>
-            <span className='burger-bar'></span>
+        <div className={`navbar-burger ${stickyBurger ? "burger-button" : "sticky-burger-button"} `} onClick={handleShowLinks}>
+            <span className='burger-bar' onClick={handleStickyBurger}></span>
         </div>
     </nav>
   )

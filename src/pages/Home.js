@@ -24,7 +24,7 @@ const Home = () => {
             </div>
 
             <div className='about'>
-                <p>Passioné du web & d'informatique, je me suis reconverti dans ce domaine depuis juin 2019.
+                <p>Passionné du web & d'informatique, je me suis reconverti dans ce domaine depuis juin 2019.
                     Depuis ce jour, je ne cesse de me perfectionner en tant que développeur front-end
                     en oscillant entre projets d'écoles, projets personnels & en m'autoformant.
                 </p>
