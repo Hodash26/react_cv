@@ -1,17 +1,11 @@
 // LARGE SCREEN
 
-.img-FB {
-    width: 30vw;
-}
 
-.horizontal {
-    display: none;
-}
 
 .presentation {
     display: flex;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
 .presentation-text {
@@ -21,11 +15,18 @@
     text-align: center;
     width: 60vw;
     height: auto;
-    font-size: 48px;
+    font-size: 58px;
     border: solid white 2px;
     border-left: 0;
 }
 
+.img-FB {
+    width: 35vw;
+}
+
+.horizontal {
+    display: none;
+}
 
 .styles_typicalWrapper__1_Uvh::after {
     z-index: -1;
@@ -35,8 +36,8 @@
     @include verticalCenter;
     @include gradientBorderLeft;
     margin-top: 10vh;
-    height: 50vh;
-    font-size: 32px;
+    height: 20vh;
+    font-size: 48px;
     padding: 50px;
     text-align: center;
 }
@@ -49,7 +50,6 @@
     margin: 4em;
 }
 
-// Start flip card
 
 .flip {
     position: relative;
@@ -89,9 +89,9 @@
 // End flip card
 
 .square {
-    font-size: 24px;
-    height: 15rem;
-    width: 15rem;
+    font-size: 36px;
+    height: 25rem;
+    width: 25rem;
     margin: 3rem;
     border: 1px solid white
 }
@@ -137,7 +137,7 @@
 }
 
 .lozenge > .content > .back > .square-text {
-    padding: 30px;
+    padding: 50px;
 }
 
 .square-container-text {
@@ -176,7 +176,7 @@
 .card {
     width: 35%;
     height: 50vh;
-    margin: 25px;
+    margin: 30px;
     overflow: hidden;
     position: relative;
     @include verticalCenter;
@@ -187,6 +187,7 @@
 
 .name-card {
     margin-top: 0;
+    font-size: 52px;
 }
 
 .card:hover {
@@ -202,16 +203,14 @@
     opacity: 1;
 }
 
-h4 {
-    margin-top: 10vh;
-}
-
 .pro{
     @include waveProBackground;
+    background-size: cover;
 }
 
 .no-pro {
     @include cardBackground;
+    background-size: cover;
 }
 
 .card:after {
@@ -235,7 +234,7 @@ h4 {
 }
 
 .card .con-text p {
-    font-size: 22px;
+    font-size: 42px;
     opacity: 0;
     margin-bottom: -170px;
     transition: all .25s ease;
@@ -251,30 +250,31 @@ h4 {
 }
 
 .date {
-    font-size: 16px !important;
+    font-size: 32px !important;
     margin-top: 5px;
     margin-bottom: 20px !important;
 }
 
 .date-small {
     margin-bottom: 5px !important;
-    font-size: 16px !important;
+    font-size: 32px !important;
 }
 
 .text-ad3 {
     margin-top: 20px !important;
+    
 }
 
 .container-portfolio {
-    border-top: 2px solid white;
-    border-bottom: 2px solid white;
+    border-top: 2px solid $main-color;
+    border-bottom: 2px solid $main-color;
     @include verticalCenter;
 }
 
 .text-left {
     width: 60%;
     padding: 2rem 1rem;
-    font-size: 30px;
+    font-size: 46px;
 }
 
 .card-portfolio {
@@ -305,7 +305,7 @@ h4 {
 .text-square-portfolio {
     font-family: $title-font;
     font-weight: 400;
-    font-size: 32px;
+    font-size: 48px;
     text-align: center;
     margin: 1rem;
 }
@@ -325,7 +325,7 @@ h4 {
     cursor: pointer;
     transition: 300ms ease-in-out;
     text-decoration-color: black;
-    background-color: white;
+    background-color: $main-color;
     color: black;
 }
 
@@ -352,20 +352,87 @@ h4 {
 }
 
 .container-icon-text > p {
-    font-size: 22px;
+    font-size: 36px;
     margin-top: 1rem;
 }
 
 .icons {
-    height: 50px;
-    width: 50px;
+    height: 100px;
+    width: 100px;
     width: auto;
-    color: white;
+    color: $main-color;
 }
 
 // DESKTOP
 
 @media screen and (max-width: 1920px) {
+
+    .presentation {
+        margin-top: 50px;
+    }
+
+    .presentation-text {
+        font-size: 48px;
+    }
+
+    .img-FB {
+        width: 30vw;
+    }
+
+    .about {
+        height: 50vh;
+        font-size: 32px;
+    }
+
+    .square {
+        font-size: 24px;
+        height: 15rem;
+        width: 15rem;
+    }
+
+    .lozenge > .content > .back > .square-text {
+        padding: 30px;
+    }
+
+    .card {
+        width: 35%;
+        height: 50vh;
+        margin: 25px;
+    }
+
+    .name-card {
+        font-size: 32px;
+    }
+
+    .card .con-text p {
+        font-size: 22px !important;
+    }
+
+    .date {
+        font-size: 16px !important;
+    }
+
+    .date-small {
+        font-size: 16px !important;
+    }
+
+    .text-left {
+        font-size: 30px;
+    }
+
+    .text-square-portfolio {
+        font-size: 32px;
+    }
+
+    .icons {
+        height: 50px;
+        width: 50px;
+    }
+
+    .container-icon-text > p { 
+        font-size: 22px;
+    }
+
 
 }
 
@@ -472,11 +539,6 @@ h4 {
     .container-icon-text > p {
         font-size: 18px;
     }
-
-    .icon-footer {
-        height: 25px;
-        width: 25px;
-    }
 }
 
 // RESPONSIVE MOBILE
@@ -524,6 +586,10 @@ h4 {
         font-size: 20px;
     }
 
+    .name-card {
+        font-size: 26px;
+    }
+
     .container-portfolio {
         margin: 0;
     }
@@ -545,11 +611,6 @@ h4 {
 
     .icons {
         height: 60px;
-    }
-
-    .icon-footer {
-        width: 22px;
-        height: 22px;
     }
 }
 

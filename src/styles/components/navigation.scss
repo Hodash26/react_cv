@@ -5,14 +5,14 @@
     justify-content: space-between;
     padding: 0.1rem;
     width: 100%;
-    min-height: 75px;
+    min-height: 125px;
     color: $main-color;
     border-bottom: 1px solid white;
 }
 
 .navbar-links {
     display: flex;
-    font-size: 24px;
+    font-size: 38px;
 }
 
 .navbar-item {
@@ -54,6 +54,18 @@
       width: 100%;
     }
   }
+
+  @media screen and (max-width: 1920px) {
+
+    .navbar {
+        min-height: 75px;
+    }
+
+    .navbar-links {
+        font-size: 24px;
+    }
+
+}
 
 @media screen and (max-width: 960px) {
     .navbar-links {
